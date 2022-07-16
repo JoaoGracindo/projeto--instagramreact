@@ -1,15 +1,20 @@
+
+import Icon from "./icones";
+
+
+
 function NavBar(){
     return(
       <div class="navbar">
         <div class="container">
           <div class="logo">
-            <ion-icon name="logo-instagram"></ion-icon>
+            <Icon name="logo-instagram" />
             <div class="separador"></div>
             <img src="assets/img/logo.png" />
           </div>
 
           <div class="logo-mobile">
-            <ion-icon name="logo-instagram"></ion-icon>
+            <Icon name="logo-instagram" />
           </div>
 
           <div class="instagram-mobile">
@@ -21,14 +26,14 @@ function NavBar(){
           </div>
   
           <div class="icones">
-            <ion-icon name="paper-plane-outline"></ion-icon>
-            <ion-icon name="compass-outline"></ion-icon>
-            <ion-icon name="heart-outline"></ion-icon>
-            <ion-icon name="person-outline"></ion-icon>
+            <Icon name="paper-plane-outline" />
+            <Icon name="compass-outline" />
+            <Icon name="heart-outline" />
+            <Icon name="person-outline" />
           </div>
 
           <div class="icones-mobile">
-            <ion-icon name="paper-plane-outline"></ion-icon>
+            <Icon name="paper-plane-outline" />
           </div>
         </div>
       </div>
