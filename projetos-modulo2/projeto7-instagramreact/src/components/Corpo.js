@@ -1,101 +1,17 @@
 import Icon from "./icones";
 import Stories from "./Stories";
-
+import Posts from "./Posts";
 
 
 function Corpo () {
     return(
       <div class="corpo">
         <div class="esquerda">
-            <Stories />
-          {/* <div class="stories">
-            <Story user="9gag" />
-            <Story user="meowed" />
-            <Story user="barked" />
-            <Story user="nathanwpylestrangeplanet" />
-            <Story user="wawawicomics" />
-            <Story user="respondeai" />
-            <Story user="filomoderna" />
-            <Story user="memeriagourmet" />
 
-            <div class="setinha">
-              <Icon name="chevron-forward-circle" />
-            </div>
-          </div> */}
+          <Stories />
 
-          <div class="posts">
-            <div class="post">
-              <div class="topo">
-                <div class="usuario">
-                  <img src="assets/img/meowed.svg" />
-                  meowed
-                </div>
-                <div class="acoes">
-                  <Icon name="ellipsis-horizontal" />
-                </div>
-              </div>
+          <Posts />
 
-              <div class="conteudo">
-                <img src="assets/img/gato-telefone.svg" />
-              </div>
-
-              <div class="fundo">
-                <div class="acoes">
-                  <div>
-                    <Icon name="heart-outline" />
-                    <Icon name="chatbubble-outline" />
-                    <Icon name="paper-plane-outline" />
-                  </div>
-                  <div>
-                    <Icon name="bookmark-outline" />
-                  </div>
-                </div>
-
-                <div class="curtidas">
-                  <img src="assets/img/respondeai.svg" />
-                  <div class="texto">
-                    Curtido por <strong>respondeai</strong> e <strong>outras 101.523 pessoas</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="post">
-              <div class="topo">
-                <div class="usuario">
-                  <img src="assets/img/barked.svg" />
-                  barked
-                </div>
-                <div class="acoes">
-                  <Icon name="ellipsis-horizontal" />
-                </div>
-              </div>
-
-              <div class="conteudo">
-                <img src="assets/img/dog.svg" />
-              </div>
-
-              <div class="fundo">
-                <div class="acoes">
-                  <div>
-                    <Icon name="heart-outline" />
-                    <Icon name="chatbubble-outline" />
-                    <Icon name="paper-plane-outline" />
-                  </div>
-                  <div>
-                    <Icon name="bookmark-outline" />
-                  </div>
-                </div>
-
-                <div class="curtidas">
-                  <img src="assets/img/adorable_animals.svg" />
-                  <div class="texto">
-                    Curtido por <strong>adorable_animals</strong> e <strong>outras 99.159 pessoas</strong>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
         </div>
 
         <div class="sidebar">
