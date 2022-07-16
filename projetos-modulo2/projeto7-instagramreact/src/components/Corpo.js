@@ -1,3 +1,6 @@
+import Icon from "./icones";
+
+
 function Corpo () {
     return(
       <div class="corpo">
@@ -76,7 +79,7 @@ function Corpo () {
             </div>
 
             <div class="setinha">
-              <ion-icon name="chevron-forward-circle"></ion-icon>
+              <Icon name="chevron-forward-circle" />
             </div>
           </div>
 
@@ -88,7 +91,7 @@ function Corpo () {
                   meowed
                 </div>
                 <div class="acoes">
-                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                  <Icon name="ellipsis-horizontal" />
                 </div>
               </div>
 
@@ -99,12 +102,12 @@ function Corpo () {
               <div class="fundo">
                 <div class="acoes">
                   <div>
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <ion-icon name="chatbubble-outline"></ion-icon>
-                    <ion-icon name="paper-plane-outline"></ion-icon>
+                    <Icon name="heart-outline" />
+                    <Icon name="chatbubble-outline" />
+                    <Icon name="paper-plane-outline" />
                   </div>
                   <div>
-                    <ion-icon name="bookmark-outline"></ion-icon>
+                    <Icon name="bookmark-outline" />
                   </div>
                 </div>
 
@@ -124,7 +127,7 @@ function Corpo () {
                   barked
                 </div>
                 <div class="acoes">
-                  <ion-icon name="ellipsis-horizontal"></ion-icon>
+                  <Icon name="ellipsis-horizontal" />
                 </div>
               </div>
 
@@ -135,12 +138,12 @@ function Corpo () {
               <div class="fundo">
                 <div class="acoes">
                   <div>
-                    <ion-icon name="heart-outline"></ion-icon>
-                    <ion-icon name="chatbubble-outline"></ion-icon>
-                    <ion-icon name="paper-plane-outline"></ion-icon>
+                    <Icon name="heart-outline" />
+                    <Icon name="chatbubble-outline" />
+                    <Icon name="paper-plane-outline" />
                   </div>
                   <div>
-                    <ion-icon name="bookmark-outline"></ion-icon>
+                    <Icon name="bookmark-outline" />
                   </div>
                 </div>
 
