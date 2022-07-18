@@ -30,7 +30,7 @@ export default function Stories (){
     return(
       <div class="stories">
         
-        {users.map((u) => <Story user={u} />)}
+        {users.map((usuario) => <Story user={usuario} />)}
 
         <div class="setinha">
           <Icon name="chevron-forward-circle" />

@@ -4,7 +4,6 @@ import React from "react";
 function Post (props){
 
     const [curtida, setCurtida] = React.useState("heart-outline");
-    const [curtido, setCurtido] = React.useState("")
     function curtir(){
                     if(curtida === 'heart-outline'){
                         setCurtida("heart")
