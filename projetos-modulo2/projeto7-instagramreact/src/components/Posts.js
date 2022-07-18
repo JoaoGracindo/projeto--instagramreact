@@ -3,6 +3,17 @@ import React from "react";
 
 function Post (props){
 
+    const [curtida, setCurtida] = React.useState("heart-outline");
+    const [curtido, setCurtido] = React.useState("")
+    function curtir(){
+                    if(curtida === 'heart-outline'){
+                        setCurtida("heart")
+                    
+                    }else if(curtida === 'heart'){
+                        setCurtida("heart-outline")
+                    }
+                   }
+
     const src = ('assets/img/' + props.user +'.svg');
     const srcCurtida = ('assets/img/' + props.curtidoPor +'.svg');
     return(
@@ -18,13 +29,15 @@ function Post (props){
         </div>
 
         <div class="conteudo">
-          <img src={props.imgPost} />
+          <img src={props.imgPost} onClick={() => {setCurtida("heart")}}/>
         </div>
 
         <div class="fundo">
           <div class="acoes">
             <div>
-              <Icon name="heart-outline" />
+              <span onClick={curtir}>
+                <Icon name={curtida} />
+              </span>
               <Icon name="chatbubble-outline" />
               <Icon name="paper-plane-outline" />
             </div>
@@ -63,12 +76,7 @@ const itensPosted = [
 export default function Posts(){
     return(
       <div class="posts">
-
         {itensPosted.map(obj => <Post user={obj.user} imgPost={obj.imgPost} curtidoPor={obj.curtidoPor} quantidadeCurtidas={obj.quantidadeCurtidas} />)}
-
-        {/* <Post user='meowed' imgPost='assets/img/gato-telefone.svg' curtidoPor='respondeai' quantidadeCurtidas='101.523' />
-        <Post user='barked' imgPost='assets/img/dog.svg' curtidoPor='adorable_animals' quantidadeCurtidas='99.159' /> */}
-
       </div>
     )
 }
