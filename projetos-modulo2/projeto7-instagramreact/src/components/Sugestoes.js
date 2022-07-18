@@ -1,5 +1,27 @@
 import Icon from "./icones";
 
+const usuariosSugeridos = [
+    {name:'bad.vibes.memes',
+    razao:'Segue você'
+    },
+
+    {name:'chibirdart',
+    razao:'Segue você'
+    },
+
+    {name:'razoesparaacreditar',
+    razao:'Novo no Instagram'
+    },
+
+    {name:'adorable_animals',
+    razao:'Segue você'
+    },
+
+    {name:'smallcutecats',
+    razao:'Segue você'
+    }
+]
+
 function Sugestao (props){
     const src = ('assets/img/' + props.user +'.svg');
     return(
@@ -24,12 +46,8 @@ export default function Sugestoes(){
           Sugestões para você
           <div>Ver tudo</div>
         </div>
-
-        <Sugestao user='bad.vibes.memes' razao='Segue você' />
-        <Sugestao user='chibirdart' razao='Segue você' />
-        <Sugestao user='razoesparaacreditar' razao='Novo no Instagram' />
-        <Sugestao user='adorable_animals' razao='Segue você' />
-        <Sugestao user='smallcutecats' razao='Segue você' />
+        
+        {usuariosSugeridos.map(obj => <Sugestao user={obj.name} razao={obj.razao} />)}
 
       </div>
     )

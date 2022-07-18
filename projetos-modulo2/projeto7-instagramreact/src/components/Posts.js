@@ -44,13 +44,30 @@ function Post (props){
     )
 }
 
+const itensPosted = [
+    {
+        user:'meowed',
+        imgPost:'assets/img/gato-telefone.svg',
+        curtidoPor:'respondeai',
+        quantidadeCurtidas:'101.523',
+    },
+
+    {
+        user: 'barked',
+        imgPost:'assets/img/dog.svg',
+        curtidoPor:'adorable_animals',
+        quantidadeCurtidas:'99.159',
+    }
+]
 
 export default function Posts(){
     return(
       <div class="posts">
 
-        <Post user='meowed' imgPost='assets/img/gato-telefone.svg' curtidoPor='respondeai' quantidadeCurtidas='101.523' />
-        <Post user='barked' imgPost='assets/img/dog.svg' curtidoPor='adorable_animals' quantidadeCurtidas='99.159' />
+        {itensPosted.map(obj => <Post user={obj.user} imgPost={obj.imgPost} curtidoPor={obj.curtidoPor} quantidadeCurtidas={obj.quantidadeCurtidas} />)}
+
+        {/* <Post user='meowed' imgPost='assets/img/gato-telefone.svg' curtidoPor='respondeai' quantidadeCurtidas='101.523' />
+        <Post user='barked' imgPost='assets/img/dog.svg' curtidoPor='adorable_animals' quantidadeCurtidas='99.159' /> */}
 
       </div>
     )
